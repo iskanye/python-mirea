@@ -17,7 +17,7 @@ def draw(shader, width, height):
 
 def main(shader):
     label = tk.Label()
-    img = tk.PhotoImage(data=draw(shader, 256, 256)).zoom(2)
+    img = tk.PhotoImage(data=draw(shader, 256, 256)).zoom(3)
     label.pack()
     label.config(image=img)
     tk.mainloop()
